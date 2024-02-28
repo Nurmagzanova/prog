@@ -12,7 +12,7 @@ if df is not None:
     st.header("Датасет")
     st.dataframe(df)
     st.write("---")
-    st.title("Hazardous Prediction") 
+    st.title("Nearest Centroid Classifier") 
 
     list=[]
 
@@ -22,12 +22,12 @@ if df is not None:
 
     list = np.array(list).reshape(1,-1)
     list=list.tolist()
-    st.title("Тип модели обучения: kNN")
+    st.title("Тип модели обучения: Nearest Centroid Classifier")
     
 
     button_clicked = st.button("Предсказать")
     if button_clicked:
-        with open('models/knn.pkl', 'rb') as file:
+        with open('models/clf.pkl', 'rb') as file:
             knn_model = pickle.load(file)
         if knn_model.predict(list) == 0:
             st.success("Объект не опасен")

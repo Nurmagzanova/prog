@@ -12,7 +12,7 @@ if df is not None:
     st.header("Датасет")
     st.dataframe(df)
     st.write("---")
-    st.title("Appliances Prediction") 
+    st.title("Nearest Neighbors Regression") 
 
     st.markdown('Для предсказания необходимо выделить целевой признак, а также разделить датасет на обучающую и тестовую выборку:')
     code = '''
@@ -43,7 +43,7 @@ if df is not None:
 
     list = np.array(list).reshape(1,-1)
     list=list.tolist()
-    st.title("Тип модели обучения: BayesianRidge")
+    st.title("Тип модели обучения: Nearest Neighbors Regression")
     
 
     button_clicked = st.button("Предсказать")
