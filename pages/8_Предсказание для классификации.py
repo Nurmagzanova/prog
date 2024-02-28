@@ -27,7 +27,7 @@ if df is not None:
 
     button_clicked = st.button("Предсказать")
     if button_clicked:
-        with open('models/clf.pkl', 'rb') as file:
+        with open('../models/clf.pkl', 'rb') as file:
             knn_model = pickle.load(file)
         if knn_model.predict(list) == 0:
             st.success("Объект не опасен")
@@ -37,3 +37,4 @@ if df is not None:
             st.success("Объект опасен")
             st.markdown('Площадь под кривой auc-roc:')
             st.code(0.8663573488749037, language='python')
+            
