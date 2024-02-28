@@ -12,7 +12,7 @@ if df is not None:
     st.header("Датасет")
     st.dataframe(df)
     st.write("---")
-    st.title("Nearest Neighbors Regression") 
+    st.title("Appliances Prediction") 
 
     st.markdown('Для предсказания необходимо выделить целевой признак, а также разделить датасет на обучающую и тестовую выборку:')
     code = '''

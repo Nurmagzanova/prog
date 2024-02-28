@@ -12,7 +12,7 @@ if df is not None:
     st.header("Датасет")
     st.dataframe(df)
     st.write("---")
-    st.title("Nearest Centroid Classifier") 
+    st.title("Hazardous Prediction") 
 
     list=[]
 
