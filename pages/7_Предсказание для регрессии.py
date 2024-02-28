@@ -48,7 +48,7 @@ if df is not None:
 
     button_clicked = st.button("Предсказать")
     if button_clicked:
-        with open('../models/knn (1).pkl', 'rb') as file:
+        with open('models/knn (1).pkl', 'rb') as file:
             baesian_model = pickle.load(file)
             y_pred = baesian_model.predict(list)
             st.success(y_pred)
