@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "models",
+			"path": "."
+		},
+		{
+			"name": "pages",
+			"path": "../pages"
+		},
+		{
+			"name": ".devcontainer",
+			"path": "../.devcontainer"
+		}
+	],
+	"settings": {}
+}
