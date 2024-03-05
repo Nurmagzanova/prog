@@ -27,7 +27,7 @@ if df is not None:
 
     button_clicked = st.button("Предсказать")
     if button_clicked:
-        with open('models/clf.pkl', 'rb') as file:
+        with open('models/c_model.pkl', 'rb') as file:
             knn_model = pickle.load(file)
         if knn_model.predict(list) == 0:
             st.success("Объект не опасен")
